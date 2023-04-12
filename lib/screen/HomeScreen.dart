@@ -148,6 +148,7 @@ class _HomeState extends State<HomeScreen> {
             padding: EdgeInsets.only(left: 20, right: 20, bottom: 10),
             height: 570,
             child: FirebaseAnimatedList(
+                padding: EdgeInsets.only(bottom: 50),
                 defaultChild: Center(child: CircularProgressIndicator(),),
                 query: fDatabaseContent,
                 itemBuilder: (context, snapshot, animation, index){
